@@ -11,6 +11,7 @@ class _LoginPageState extends State<LoginPage> {
   bool changeButton = false;
 
   final _formKey = GlobalKey<FormState>();
+
   moveToHome(BuildContext context) async {
     if (_formKey.currentState!.validate()) {
       setState(() {
@@ -78,6 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                             return "Password length should be atleast six";
                           }
                           }
+
                           return null;
                         },
                       ),
@@ -109,23 +111,6 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       )
 
-                      // ElevatedButton(
-                      //   child: Text(
-                      //     "login",
-                      //     style: TextStyle(fontSize: 20),
-                      //   ),
-                      //   onPressed: () {
-                      //     Navigator.pushNamed(context, MyRoutes.homeRoute);
-                      //   },
-                      //   //for styling buttons method 1
-                      //   // style: ButtonStyle(
-                      //   //     foregroundColor:
-                      //   //         MaterialStateProperty.all(Colors.white)),
-
-                      //   //method 2
-                      //   style:
-                      //       TextButton.styleFrom(minimumSize: Size(110.0, 50.0)),
-                      // )
                     ],
                   ),
                 )
