@@ -76,8 +76,8 @@ class _LoginPageState extends State<LoginPage> {
                             return "Password can not be empty";
                           } else {
                             if (value.length < 6) {
-                            return "Password length should be atleast six";
-                          }
+                              return "Password length should be atleast six";
+                            }
                           }
 
                           return null;
@@ -110,7 +110,6 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       )
-
                     ],
                   ),
                 )
