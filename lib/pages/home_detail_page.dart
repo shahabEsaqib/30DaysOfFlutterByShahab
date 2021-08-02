@@ -1,5 +1,6 @@
 import 'package:demo_project/models/catalog.dart';
 import 'package:demo_project/widgets/theme.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -14,7 +15,9 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       bottomNavigationBar: Container(
         color: Colors.white,
         child: ButtonBar(
@@ -27,8 +30,8 @@ class HomeDetailPage extends StatelessWidget {
                         backgroundColor:
                             MaterialStateProperty.all(MyTheme.darkBluishColor),
                         shape: MaterialStateProperty.all(StadiumBorder())),
-                    child: "Buy".text.xl.make())
-                .wh(100, 50)
+                    child: "Add to Cart".text.xl.make())
+                .wh(130, 50)
           ],
         ).p32(),
       ),
@@ -60,6 +63,11 @@ class HomeDetailPage extends StatelessWidget {
                         .xl
                         .make(),
                     12.heightBox,
+                    " djksd  DFHDJFHD DHFDHFD dhfdjd hfahfjd  hfjfdhjd  jhfadfha jhfdj hey i am shahab khan from peshawar pakisan and study CS"
+                        .text
+                        .textStyle(context.captionStyle!)
+                        .make()
+                        .p16()
                   ],
                 ).py64(),
               ),
