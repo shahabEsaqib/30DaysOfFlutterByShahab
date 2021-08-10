@@ -1,9 +1,10 @@
 import 'dart:convert';
 
 class CatalogeModel {
-  static final catModel = CatalogeModel.innternal();
-  CatalogeModel.innternal();
-  factory CatalogeModel() => catModel;
+  // singleton class
+  // static final catModel = CatalogeModel.innternal();
+  // CatalogeModel.innternal();
+  // factory CatalogeModel() => catModel;
 
   static List<Item> items = [];
   //= [
